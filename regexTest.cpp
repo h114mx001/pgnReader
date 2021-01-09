@@ -2,12 +2,9 @@
 #include <regex.h>
 using namespace std;
 int main(){
-    string text = "[Event \"vs Computer\"]";
-    regex rgx (R"(\[(\w+)\s\"(\N+)\"\])");
+    string text = R"([Event "Hello"])";
+    // regex rgx (R"(\[(\w+)\s\"(\N+)\"\])");
     smatch match;
-    regex_search(text, match, rgx);
-    for (auto x: match){
-        cout << x << " ";
-    }
-    //hello
+    regex rgx (R"(\[(\w+)\s\"(\N+)\"\])");
+    regex_match()
 }
